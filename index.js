@@ -1,16 +1,17 @@
 /*Importación de clases*/
 import {Cliente} from './Cliente.js'
 import {CuentaCorriente} from './CuentaCorriente.js';
-import { CuentaAhorro } from './CuentaAhorro.js';
-import { Cuenta } from './cuenta.js';
+import {CuentaAhorro} from './CuentaAhorro.js';
+
 
 const cliente = new Cliente('Leonardo','13804050','123224');
 const cliente2 = new Cliente('María','16979808','8989');
 
-const cuentaDeLeonardo = new Cuenta(cliente, '1', '001',0);
-const cuentaDeMaria = new Cuenta(cliente2,'2','002',0);
+const cuentaDeLeonardo = new CuentaCorriente(cliente,'1','001',0);
+const cuentaDeMaria = new CuentaCorriente(cliente2,'2','002',0);
 
-const CuentaAhorroLeonardo = new Cuenta(cliente,'9985','001',0);
+const CuentaAhorroLeonardo = new CuentaAhorro(cliente,'9985','001',0);
+//const CuentaAhorroMaria = new CuentaAhorro(cliente,'9985','001',0);
 
 console.log(cuentaDeLeonardo);
 cuentaDeLeonardo.depositoEnCuenta(150);
@@ -22,3 +23,16 @@ CuentaAhorroLeonardo.depositoEnCuenta(200);
 console.log(CuentaAhorroLeonardo.verSaldo());
 CuentaAhorroLeonardo.retirarDeCuenta(120);
 console.log(CuentaAhorroLeonardo.verSaldo()); 
+
+/*console.log(cuentaDeMaria);
+cuentaDeMaria.depositoEnCuenta(900);
+console.log(cuentaDeMaria.verSaldo());
+cuentaDeMaria.retirarDeCuenta(80);
+console.log(cuentaDeMaria.verSaldo());
+console.log(CuentaAhorroMaria);
+CuentaAhorroMaria.depositoEnCuenta(500);
+console.log(CuentaAhorroMaria.verSaldo());
+CuentaAhorroMaria.retirarDeCuenta(250);
+console.log(CuentaAhorroMaria.verSaldo()); 
+*/
+
