@@ -10,7 +10,7 @@ import { Director } from './Empleados/Director.js';
 import { SistemaAutenticacion } from './Empleados/SistemaAutenticacion.js';
 
 const cliente = new Cliente('Leonardo','13804050','123224');
-cliente.asignarClave('1234');
+cliente.asignarClave('12345');
 console.log(SistemaAutenticacion.login(cliente,'12345'));
 
 const cliente2 = new Cliente('María','16979808','8989');

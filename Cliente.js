@@ -1,8 +1,8 @@
-export class Cliente
-{
+export class Cliente {
     nombreCliente;
     dniCliente;
     rutCliente;
+    //autenticable;
     #clave;
 
     constructor(nombreCliente, dniCliente, rutCliente) {
