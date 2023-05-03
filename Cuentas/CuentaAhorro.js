@@ -1,4 +1,4 @@
-import { Cuenta } from "./cuenta.js";
+import { Cuenta } from "./Cuenta.js";
 
 export class CuentaAhorro extends Cuenta {
 
