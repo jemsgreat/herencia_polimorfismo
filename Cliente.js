@@ -16,7 +16,12 @@ export class Cliente
         this.#clave = clave;
     }
 
-    get clave() {
+    autenticable(clave) {
+        return clave == this.#clave;
+    }
+
+    /*get clave() {
         return this.#clave;
     }
+    */
 }
